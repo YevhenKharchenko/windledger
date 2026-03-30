@@ -1,60 +1,73 @@
 .context-menu {
-  background-image: url(../img/context/context-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  display: none;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(180deg, #dac2fc 0%, #b19aec 100%);
+  border-radius: 40px 0 0 40px;
   width: 100%;
+  max-width: 312px;
   height: 100%;
   margin: 0 auto;
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  transform: none;
-  z-index: 5;
+  z-index: 10;
+  height: 100%;
+  overflow-y: auto;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  visibility: hidden;
+}
+
+.context-container {
+  padding: 0 20px;
+}
+
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-top: 6px;
+  margin-bottom: 112px;
+
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.close-icon {
 }
 
 .context-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }
 
 .context-nav-list {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 34px;
+  gap: 36px;
+  margin-left: 64px;
 }
 
 .context-list-item {
 }
 
 .context-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #155e63;
-  transition:
-    color 0.3s ease-in-out,
-    background 0.3s ease-in-out;
+  color: #2e2a3b;
+  transition: color 0.3s ease-in-out;
 
   &:active {
-    color: #ff6b4a;
   }
 }
 
 .is-open {
   display: flex;
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
 
   @include media(desktop) {
     display: none;
@@ -63,6 +76,9 @@
 
 .closed {
   display: none;
+  transform: translateX(100%);
+  opacity: 0;
+  visibility: hidden;
 }
 
 .screen-freeze {

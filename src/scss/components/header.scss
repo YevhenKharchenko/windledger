@@ -1,5 +1,5 @@
 .header {
-  background: transparent;
+  background: #dac2fc;
   position: fixed;
   width: 100%;
   top: 0;
@@ -8,10 +8,6 @@
   @include media(desktop) {
     background: none;
   }
-}
-
-.header-context {
-  background: transparent;
 }
 
 .header-bg-wrapper {
@@ -29,10 +25,6 @@
     max-width: 1440px;
     background-image: url(../img/hero/hero-bg-desk.jpg);
   }
-}
-
-.header-bg-wrapper-context {
-  background-image: none;
 }
 
 .header-container {
@@ -62,11 +54,11 @@
 }
 
 .nav-list-link {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #155e63;
+  color: #2e2a3b;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +70,6 @@
   &:focus,
   &:active,
   &.active {
-    color: #ff6b4a;
   }
 }
 
@@ -93,17 +84,4 @@
 }
 
 .menu-icon {
-}
-
-.close-icon {
-}
-
-.close-btn {
-  display: none;
-  justify-content: center;
-  align-items: center;
-
-  @include media(desktop) {
-    display: none;
-  }
 }
