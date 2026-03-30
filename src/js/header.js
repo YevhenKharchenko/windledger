@@ -12,7 +12,6 @@ function onMenuButtonClick() {
 
   contextMenuIsOpen = true;
   contextMenu.classList.add('is-open');
-  menuBtn.classList.add('closed');
   closeContextBtn.classList.add('is-open');
 
   contextMenu.addEventListener('click', onContextMenuLinkClick);
@@ -24,7 +23,6 @@ function onCloseContextButtonClick() {
   contextMenuIsOpen = false;
   contextMenu.classList.remove('is-open');
   closeContextBtn.classList.remove('is-open');
-  menuBtn.classList.remove('closed');
 
   contextMenu.removeEventListener('click', onContextMenuLinkClick);
   closeContextBtn.removeEventListener('click', onCloseContextButtonClick);

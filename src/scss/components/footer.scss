@@ -1,11 +1,19 @@
 .footer {
   background: #6c5ce7;
+}
+
+.footer-bg-wrapper {
   padding-top: 34px;
   padding-bottom: 34px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
     padding-top: 46px;
     padding-bottom: 46px;
+    max-width: 1440px;
+    position: relative;
   }
 }
 
@@ -68,5 +76,16 @@
 
   @include media(desktop) {
     text-align: center;
+  }
+}
+
+.footer-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    top: -86px;
+    right: 80px;
   }
 }

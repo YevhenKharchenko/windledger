@@ -1,17 +1,3 @@
-.faq-contact-bg-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  background-image: url(../img/contact/contact-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom 54px center;
-  background-size: auto;
-
-  @include media(desktop) {
-    background-image: url(../img/contact/contact-bg-desk.png);
-    background-position: bottom 73px center;
-  }
-}
-
 .contact-section {
   @include media(desktop) {
   }
@@ -19,15 +5,20 @@
 
 .contact-bg-wrapper {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 46px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
+  background-image: url(../img/contact/contact-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 150px;
-    padding-bottom: 150px;
+    padding-top: 358px;
+    padding-bottom: 95px;
     max-width: 1440px;
+    background-image: url(../img/contact/contact-bg-desk.png);
   }
 }
 
@@ -36,24 +27,36 @@
   }
 }
 
-.contact-title {
+.contact-content-wrapper {
   @include media(desktop) {
+    max-width: 522px;
+    margin-left: 108px;
   }
 }
 
-.contact-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Baloo 2', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  color: #155e63;
-  max-width: max-content;
-  margin-left: auto;
-  margin-right: auto;
+.contact-title {
+  margin-bottom: 316px;
 
   @include media(desktop) {
+    text-align: left;
+    margin-bottom: 36px;
+  }
+}
+
+.contact-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #2e2a3b;
+  margin-bottom: 28px;
+
+  @include media(desktop) {
+    margin-bottom: 36px;
+  }
+}
+
+.contact-btn {
+  @include media(desktop) {
+    margin: 0;
   }
 }

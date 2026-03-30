@@ -1,51 +1,94 @@
 <section class="section gameplay-section" id="gameplay">
   <div class="gameplay-bg-wrapper">
     <div class="container gameplay-container">
-      <h2 class="section-title gameplay-title">How to Play</h2>
+      <h2 class="section-title gameplay-title">How To Play</h2>
       <div class="gameplay-content-wrapper">
-        <div class="gameplay-img-wrapper">
+        <picture>
+          <source
+            srcset="./img/gameplay/gameplay-img-desk.png"
+            media="(min-width: 1440px)"
+            width="260"
+            height="261" />
+          <source
+            srcset="./img/gameplay/gameplay-img-mob.png"
+            width="195"
+            height="196" />
           <img
             class="gameplay-img"
             src="./img/gameplay/gameplay-img-mob.png"
             alt="Screenshot of the game"
-            width="306"
-            height="363"
+            width="195"
+            height="196"
             loading="lazy"
-          />
+        /></picture>
+        <div class="gameplay-text-wrapper">
+          <p class="gameplay-subtitle">Classic Sliding Puzzle Mechanics</p>
+          <ul class="gameplay-list">
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-puzzle"></use>
+              </svg>
+              <p class="gameplay-item-text">
+                Start with shuffled puzzle pieces arranged in a grid.
+              </p>
+            </li>
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-puzzle"></use>
+              </svg>
+              <p class="gameplay-item-text">
+                Slide tiles into adjacent empty spaces to rearrange them.
+              </p>
+            </li>
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-puzzle"></use>
+              </svg>
+              <p class="gameplay-item-text">
+                Reconstruct the complete image piece by piece.
+              </p>
+            </li>
+            <li class="gameplay-list-item">
+              <svg class="gameplay-icon" width="32" height="32">
+                <use href="./img/sprite.svg#icon-puzzle"></use>
+              </svg>
+              <p class="gameplay-item-text">
+                Solve the puzzle to unlock the next level.
+              </p>
+            </li>
+          </ul>
+          <p class="gameplay-text">
+            Sounds simple? Think again. As grids grow larger and images become
+            more complex, every move counts.
+          </p>
         </div>
-        <ul class="gameplay-list gameplay-top-list">
-          <li class="gameplay-list-item">
-            <p class="gameplay-item-text">
-              Match identical Mahjong tiles to remove them from the board
-            </p>
-          </li>
-          <li class="gameplay-list-item">
-            <p class="gameplay-item-text">Only free tiles can be selected</p>
-          </li>
-          <li class="gameplay-list-item">
-            <p class="gameplay-item-text">
-              Clear all tiles to complete a level
-            </p>
-          </li>
-        </ul>
-        <ul class="gameplay-list gameplay-bottom-list">
-          <li class="gameplay-list-item">
-            <p class="gameplay-item-text">
-              Unlock new trails and environments as you progress
-            </p>
-          </li>
-          <li class="gameplay-list-item">
-            <p class="gameplay-item-text">
-              Use helpful hints when puzzles get tricky
-            </p>
-          </li>
-          <li class="gameplay-list-item">
-            <p class="gameplay-item-text">
-              Same Mahjong rules you already know, but still interesting
-            </p>
-          </li>
-        </ul>
       </div>
     </div>
+    <picture>
+      <source
+        srcset="./img/gameplay/gameplay-bg-desk.png"
+        media="(min-width: 1440px)"
+        width="169"
+        height="171" />
+      <source
+        srcset="./img/gameplay/gameplay-bg-mob.png"
+        width="90"
+        height="91" />
+      <img
+        class="gameplay-bg-img"
+        src="./img/gameplay/gameplay-bg-mob.png"
+        alt="Screenshot of the game"
+        width="90"
+        height="91"
+        loading="lazy"
+    /></picture>
+    <img
+      class="gameplay-left-bg-img"
+      src="./img/gameplay/gameplay-left-bg-desk.png"
+      alt="Screenshot of the game"
+      width="186"
+      height="189"
+      loading="lazy"
+    />
   </div>
 </section>

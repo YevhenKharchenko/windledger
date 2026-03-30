@@ -1,0 +1,110 @@
+.reviews-section {
+  @include media(desktop) {
+  }
+}
+
+.reviews-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    max-width: 1440px;
+  }
+}
+
+.reviews-container {
+}
+
+.reviews-title {
+  @include media(desktop) {
+  }
+}
+
+.reviews-swiper-container {
+  max-width: 335px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.reviews-swiper-container.show {
+  visibility: visible;
+}
+
+.reviews-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+.reviews-slide {
+  background: #a29bfe;
+  border-radius: 20px;
+  padding: 22px 25px;
+  width: 100% !important;
+  max-width: 335px;
+  min-height: 342px;
+  display: flex !important;
+  flex-direction: column;
+
+  @include media(desktop) {
+    max-width: 413px;
+    min-height: 303px;
+  }
+}
+
+.reviews-rating-img {
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-text {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #2e2a3b;
+  margin-bottom: 18px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: auto;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-img {
+  min-width: 72px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #2e2a3b;
+
+  @include media(desktop) {
+  }
+}

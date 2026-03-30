@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://networkroute.space/sitemap.xml
+Sitemap: https://windledger.pro/sitemap.xml

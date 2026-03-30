@@ -1,8 +1,10 @@
 .faq-section {
   padding-top: 80px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
     padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
 
@@ -12,8 +14,6 @@
 }
 
 .faq-title {
-  text-align: center;
-
   @include media(desktop) {
   }
 }
@@ -21,16 +21,16 @@
 .faq-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
 
   @include media(desktop) {
-    gap: 18px;
+    gap: 12px;
   }
 }
 
 .faq-list-item {
-  border-bottom: 2px solid #ff6b4a;
-  padding: 0px 0px 8px;
+  border-bottom: 1px solid #6c5ce7;
+  padding: 10px 0px 10px 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -55,26 +55,22 @@
 }
 
 .faq-btn-text {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #155e63;
+  font-size: 18px;
+  color: #6c5ce7;
   text-align: left;
 
   @include media(desktop) {
-    font-size: 16px;
   }
 }
 
 .faq-toggle-symbol {
-  background: #ff6b4a;
-  border-radius: 46px;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 44px;
-  height: 44px;
+  min-width: 36px;
+  height: 36px;
   margin-left: auto;
   transition: transform 0.3s ease-in-out;
 
@@ -83,30 +79,27 @@
 }
 
 .faq-icon {
-  transform: rotate(90deg);
-
   @include media(desktop) {
   }
 }
 
 .faq-bottom-text {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Rounded Mplus 1c', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #155e63;
+  color: #2e2a3b;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   opacity: 0;
 
   @include media(desktop) {
-    font-size: 16px;
   }
 }
 
 .is-visible {
-  margin-top: 8px;
+  margin-top: 10px;
   max-height: 500px;
   opacity: 1;
 
@@ -115,7 +108,7 @@
 }
 
 .faq-list-item.faq-open .faq-toggle-symbol {
-  transform: rotate(-90deg);
+  transform: rotate(180deg);
 }
 
 .faq-list-item.faq-open {
